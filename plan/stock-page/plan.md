@@ -1,0 +1,52 @@
+# Stock Page
+
+# Comp Plan for Stock Page:
+
+- NavBar
+  - Logo
+  - Buttons
+    - ClearButton
+    - ClearButton
+    - ClearButton
+    - AuthButton
+    - UserImg
+- MainContent
+  - PageHeader
+  - Text
+  - Text
+  - ButtonSection
+    - FormButton
+    - FormButton
+    - ClearButton
+- MarketIndicator
+  - MarketHeader
+  - Indicator
+  - Indicator
+  - Indicator
+  - Indicator
+- Form (Buy)
+  - FormHeader
+  - FormFields
+    - FormInput
+    - FormInput
+    - FormInput
+    - SubmitButton
+    - ClearButton
+- Form (Sell)
+  - FormHeader
+  - FormFields
+    - FormInput
+    - FormInput
+    - FormInput
+    - SubmitButton
+    - ClearButton
+- Table
+  - MarketHeader
+  - TableRow
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
+  - holdings.map(TableRow)
