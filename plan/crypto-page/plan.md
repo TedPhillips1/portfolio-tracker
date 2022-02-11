@@ -24,7 +24,7 @@
   - Indicator
   - Indicator
   - Indicator
-- Form
+- Form (Buy)
   - FormHeader
   - FormFields
     - FormInput
@@ -32,7 +32,7 @@
     - FormInput
     - SubmitButton
     - ClearButton
-- Form
+- Form (Sell)
   - FormHeader
   - FormFields
     - FormInput
