@@ -31,7 +31,7 @@
     - FormInput
     - FormInput
     - SubmitButton
-    - ClearButton
+    - CancelButton
 - Form (Sell)
   - FormHeader
   - FormFields
@@ -39,9 +39,16 @@
     - FormInput
     - FormInput
     - SubmitButton
-    - ClearButton
+    - CancelButton
 - Table
   - MarketHeader
+  - ColumnHeadings
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
+    - TableCell
   - TableRow
     - TableCell
     - TableCell
@@ -50,3 +57,94 @@
     - TableCell
     - TableCell
   - holdings.map(TableRow)
+
+## Hooks and Props:
+
+- NavBar:
+  - useAuth - isAuthorised, LogIn and Out functions, user
+- Logo
+- Buttons
+- ClearButton
+  - isAuthorised
+  - Link
+- ClearButton
+  - isAuthorised
+  - Link
+- ClearButton
+  - isAuthorised
+  - Link
+- AuthButton
+  - isAuthorised
+  - LogOut function
+  - inNavBar
+- UserImg
+
+  - user.img
+
+- CryptoPage
+  - useState - portfValue
+  - useState - holdings
+  - useState - CommodityValues
+- MainContent
+  - portfValue
+- PageHeader
+- Text
+- Text
+  - portfValue.crypto
+- ButtonSection
+  - useState - buyToggle
+  - useState - sellToggle
+- FormButton
+  - setBuyToggle
+  - isBuyButton
+  - toggleRender
+- FormButton
+  - setSellToggle
+  - !isBuyButton
+  - toggleRender
+- ClearButton
+- MarketIndicator
+  - CommodityValues
+- MarketHeader
+- Indicator
+  - CommodityValues.doge
+- Indicator
+  - CommodityValues.ada
+- Indicator
+  - CommodityValues.btc
+- Indicator
+  - CommodityValues.eth
+- Form
+  - isBuy
+- FormHeader
+- FormFields
+- FormInput
+- FormInput
+- FormInput
+- SubmitButton
+  - post function
+  - toggleRender
+- CancelButton
+  - toggleRender
+- Table
+  - holdings
+  - commodityValues
+- MarketHeader
+  - text = "Holdings"
+- ColumnHeading
+- TableRow
+  - holdings.map(TableRow)
+- TableCell
+  - holdings.ticker
+- TableCell
+  - holdings.amount
+- TableCell
+  - holdings.basis
+- TableCell
+  - holdings.buyprice
+- TableCell
+  - commodityvalues.ticker
+- TableCell
+  - commodityValues.ticker
+  - holdings
+  - work out pandL from them props
