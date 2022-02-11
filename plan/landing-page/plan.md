@@ -1,6 +1,6 @@
 # Landing Page
 
-Components for Landing Page:
+## Components for Landing Page:
 
 - NavBar
   - Logo
