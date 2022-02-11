@@ -64,6 +64,9 @@
   - useAuth - isAuthorised, LogIn and Out functions, user
 - Logo
 - Buttons
+  - isAuthorised
+  - logOut function
+  - user
 - ClearButton
   - isAuthorised
   - Link

@@ -41,6 +41,7 @@
     - SubmitButton
     - ClearButton
 - Table
+
   - MarketHeader
   - TableRow
     - TableCell
@@ -50,3 +51,95 @@
     - TableCell
     - TableCell
   - holdings.map(TableRow)
+
+- NavBar:
+  - useAuth - isAuthorised, LogIn and Out functions, user
+- Logo
+- Buttons
+  - isAuthorised
+  - logOut function
+  - user
+- ClearButton
+  - isAuthorised
+  - Link
+- ClearButton
+  - isAuthorised
+  - Link
+- ClearButton
+  - isAuthorised
+  - Link
+- AuthButton
+  - isAuthorised
+  - LogOut function
+  - inNavBar
+- UserImg
+
+  - user.img
+
+- StockPage
+  - useState - portfValue
+  - useState - holdings
+  - useState - CommodityValues
+- MainContent
+  - portfValue
+- PageHeader
+- Text
+- Text
+  - portfValue.stock
+- ButtonSection
+  - useState - buyToggle
+  - useState - sellToggle
+- FormButton
+  - setBuyToggle
+  - isBuyButton
+  - toggleRender
+- FormButton
+  - setSellToggle
+  - !isBuyButton
+  - toggleRender
+- ClearButton
+- MarketIndicator
+  - CommodityValues
+- MarketHeader
+- Indicator
+  - CommodityValues.ftse100
+- Indicator
+  - CommodityValues.snp500
+- Indicator
+  - CommodityValues.jdia
+- Indicator
+  - CommodityValues.ftse1000
+- Form
+  - isBuy
+- FormHeader
+- FormFields
+- FormInput
+- FormInput
+- FormInput
+- SubmitButton
+  - put function
+  - toggleRender
+- CancelButton
+  - toggleRender
+- Table
+  - holdings
+  - commodityValues
+- MarketHeader
+  - text = "Holdings"
+- ColumnHeading
+- TableRow
+  - holdings.map(TableRow)
+- TableCell
+  - holdings.ticker
+- TableCell
+  - holdings.amount
+- TableCell
+  - holdings.basis
+- TableCell
+  - holdings.buyprice
+- TableCell
+  - commodityvalues.ticker
+- TableCell
+  - commodityValues.ticker
+  - holdings
+  - work out pandL from them props
