@@ -10,6 +10,8 @@
     - ClearButton
     - AuthButton
     - UserImg
+- HomePage
+- TopContent
 - MainContent
   - PageHeader
   - Text
