@@ -31,3 +31,9 @@ The idea for a stock and crypto portfolio tracker came about when I realised tha
 ### 11/2/2022
 
 - Page plans done including components, hooks and props required for each page
+
+### 12/2/2022
+
+- Master Plan done including tech stack and combined components
+- [Kanban board](https://trello.com/b/YRioqoV6/portfolio) made with meta tasks laid out.
+- Tomorrows sprint planned in kanban board

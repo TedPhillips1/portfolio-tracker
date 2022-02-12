@@ -36,8 +36,14 @@
   - FormHeader
   - FormFields
     - FormInput
+      - Text
+      - Input
     - FormInput
+    - Text
+    - Input
     - FormInput
+      - Text
+      - Input
     - SubmitButton
     - CancelButton
 - Table
