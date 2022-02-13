@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../public/Raleway/Raleway-Medium.ttf");
+}
+
 * {
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 body {
   margin: 0;

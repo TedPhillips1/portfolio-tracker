@@ -12,6 +12,10 @@ const Home: NextPage = () => {
           content="Portfolio Tracker App for stock and crypto portfolios"
         />
         <link rel="icon" href="/favicon.ico" />
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+        </style>
       </Head>
       <NavBarComponent />
       <h1>Home</h1>
