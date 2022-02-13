@@ -7,4 +7,10 @@ export const NavBar = styled.header`
   background-color: #3d3d3d;
   height: 70px;
   margin: none;
+  flex-wrap: nowrap;
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 `;

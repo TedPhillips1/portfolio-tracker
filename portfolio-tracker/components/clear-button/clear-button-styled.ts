@@ -10,7 +10,7 @@ export const ClearButton = styled.button`
   font-size: 14px;
 
   &:hover {
-    background-color: #1d1d1d;
+    background-color: #2d2d2d;
     cursor: pointer;
   }
 
