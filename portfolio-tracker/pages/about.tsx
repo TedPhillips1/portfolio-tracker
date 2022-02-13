@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NavBarComponent from "../components/navbar/navbar-component";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <div>
       <Head>
@@ -14,9 +14,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBarComponent />
-      <h1>Home</h1>
+      <h1>About</h1>
     </div>
   );
 };
 
-export default Home;
+export default About;
