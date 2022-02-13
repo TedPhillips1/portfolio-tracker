@@ -37,3 +37,8 @@ The idea for a stock and crypto portfolio tracker came about when I realised tha
 - Master Plan done including tech stack and combined components
 - [Kanban board](https://trello.com/b/YRioqoV6/portfolio) made with meta tasks laid out.
 - Tomorrows sprint planned in kanban board
+
+### 13/2/2022
+
+- Made Logo
+- Changed shade of blue in styling.md
