@@ -49,3 +49,4 @@ Changes in development:
 - Adding NavButtons (nav)
 - removing ButtonSection (div)
   More descriptive and better semantic html tags
+  Ended up removing this component altogether and using a plain nav tag. was causing typescript issues and it is unnecessary.
