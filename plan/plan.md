@@ -43,3 +43,9 @@ TypeScript, Express.js, Node.js, SQL, Heroku
 - ColumnHeadings (div)
 - TableCell (div)
 - TableRow (div)
+
+Changes in development:
+
+- Adding NavButtons (nav)
+- removing ButtonSection (div)
+  More descriptive and better semantic html tags

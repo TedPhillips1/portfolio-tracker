@@ -42,3 +42,5 @@ The idea for a stock and crypto portfolio tracker came about when I realised tha
 
 - Made Logo
 - Changed shade of blue in styling.md
+- Installed Required Dependencies
+- Researched how the app will work/fit together
