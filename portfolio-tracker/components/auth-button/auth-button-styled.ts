@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AuthButton = styled.button`
   margin: 0.5vw;
-  margin-right: 20px;
   border: none;
   background-color: #5b98b5;
   width: 80px;

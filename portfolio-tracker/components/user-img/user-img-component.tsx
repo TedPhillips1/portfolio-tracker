@@ -1,8 +1,8 @@
 import { UserImg } from "./user-img-styled";
 
 type Props = {
-  userImg: string;
-  username: string;
+  userImg: string | undefined;
+  username: string | undefined;
 };
 
 function UserImgComponent({ userImg, username }: Props) {

@@ -32,7 +32,7 @@ function NavBarComponent() {
         )}
         {user && (
           <>
-            <Link href="/index">
+            <Link href="/">
               <a>
                 <ClearButtonComponent text="Home" />
               </a>
@@ -50,6 +50,9 @@ function NavBarComponent() {
             <a href="/api/auth/logout">
               <AuthButtonComponent text="Log Out" />
             </a>
+            {user.picture && user.name && (
+              <UserImgComponent userImg={user.picture} username={user.name} />
+            )}
           </>
         )}
       </nav>

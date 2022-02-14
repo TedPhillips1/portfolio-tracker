@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import NavBarComponent from "../components/navbar/navbar-component";
+import { useUser } from "@auth0/nextjs-auth0";
+import LandingPageComponent from "../components/landing-page/landing-page-component";
 
 const Home: NextPage = () => {
+  const { user } = useUser();
+
   return (
     <div>
       <Head>
@@ -18,7 +22,7 @@ const Home: NextPage = () => {
         </style>
       </Head>
       <NavBarComponent />
-      <h1>Home</h1>
+      {!user && <LandingPageComponent />}
     </div>
   );
 };

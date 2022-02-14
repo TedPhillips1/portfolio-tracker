@@ -12,5 +12,6 @@ export const NavBar = styled.header`
   nav {
     display: flex;
     flex-wrap: nowrap;
+    margin-right: 20px;
   }
 `;
