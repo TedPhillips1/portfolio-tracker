@@ -53,3 +53,17 @@ The idea for a stock and crypto portfolio tracker came about when I realised tha
 - Planned tomorrows sprint
 
 Notes: Got stuck on configuration problems for a while, make sure everything is configured before you use it and take time to configure correctly at the start of the build. I made some changes to the shade of blue on build time for better UI/UX design. Pretty happy with progress overall though, now the navbar is done I will just start to work on the pages themselves.
+
+### 14/2/2022
+
+- Made Laning Page Components
+- Put it together
+
+### 15/2/2022
+
+- Played around with some CSS features such as:
+  - Gradients
+  - Animations
+- Learned about styled-component keyframes
+
+A big aim today was to find how to give my design a professional feel. I felt that my landing page from yesterday had a beginner/basic look but by adding some simple things like a fade in and design element it took the design up a notch. I will continue to find little tricks like this to give my design an edge.
