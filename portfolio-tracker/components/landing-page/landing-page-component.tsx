@@ -1,27 +1,24 @@
+import { LandingPage } from "./landing-page-styled";
+import TopContentComponent from "../top-content/top-content-component";
 import PageHeaderComponent from "../page-header/page-header-component";
 import TextComponent from "../text/text-component";
-import ImageComponent from "../image/image-component";
-import { LandingPage } from "./landing-page-styled";
-import AuthButtonComponent from "../auth-button/auth-button-comp";
-import SubHeaderComponent from "../sub-header/sub-header-component";
-import CircleComponent from "../circle/circle-component";
 
 function LandingPageComponent() {
   return (
     <LandingPage>
+      <TopContentComponent />
       <div>
-        <SubHeaderComponent text="Sign Up Today" />
-        <PageHeaderComponent text="Lose the Spreadsheet." />
-        <TextComponent text="Switch to TGP Portfolios today and make keeping track of investments simple. " />
-        <a href="api/auth/login">
-          <AuthButtonComponent text="Log In" />
-        </a>
+        <PageHeaderComponent text="Lorem ipsum dolor sit" />
+        <TextComponent text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
       </div>
-      <CircleComponent />
-      <ImageComponent
-        source="https://blockchainstock.azureedge.net/features/C47CB7081D81D4B6A5F3C2D5F97D14376DF75D5E3DDC5733953EABB79263589D.jpg"
-        alt="Bitcoin and candlestick chart"
-      />
+      <div>
+        <TextComponent text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+        <PageHeaderComponent text="Lorem ipsum dolor sit" />
+      </div>
+      <div>
+        <PageHeaderComponent text="Lorem ipsum dolor sit" />
+        <TextComponent text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+      </div>
     </LandingPage>
   );
 }

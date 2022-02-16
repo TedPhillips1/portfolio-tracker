@@ -11,18 +11,16 @@ const fadeUp = keyframes`
 }
 `;
 
-export const LandingPage = styled.main`
+export const TopContent = styled.section`
   margin: auto;
   text-align: center;
   width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  section {
     text-align: left;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     animation: ${fadeUp} 1.5s 1;
   }
 `;

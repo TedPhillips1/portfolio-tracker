@@ -7,6 +7,12 @@ import LandingPageComponent from "../components/landing-page/landing-page-compon
 const Home: NextPage = () => {
   const { user } = useUser();
 
+  async function callAPI() {
+    const response = await fetch("/api/comments");
+    const data = await response.json();
+    console.log(data.comment);
+  }
+
   return (
     <div>
       <Head>

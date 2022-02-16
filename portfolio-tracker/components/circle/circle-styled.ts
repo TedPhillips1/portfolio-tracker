@@ -12,6 +12,6 @@ export const Circle = styled.div`
   border-radius: 10vw;
   position: absolute;
   left: 35vw;
-  top: 23vh;
+  top: 20vh;
   z-index: -1;
 `;
