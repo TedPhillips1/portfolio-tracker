@@ -18,7 +18,7 @@ export const LandingPage = styled.main`
 
   div {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
     text-align: left;
     margin-top: 10vh;
