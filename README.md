@@ -75,3 +75,16 @@ I've also decided that I am going to scrap the about page and fill out the landi
 - Tried to use Intersection Observer to trigger anuimation on scroll but couldn't get it working
 
 Probably going to try again tomorrow with intersection observer however I may move on if I can't do it tomorrow.
+
+### 23/2/2022
+
+- Found a working intersection observer example
+- Tried to implement it
+
+### 24/2/2022
+
+- Got the intersection observer working finally!
+- Made it trigger a state change using useReducer for one component
+- used this state to trigger an animation by passing the boolean value down to the styled component
+
+After getting the intersection observer to work (Finally!) I implemented it into my app by making it change the state of an object. I used useReducer for this as I plan to have mutiple different divs each requiring their state toggled at different times. I am unsure how I will do this yet and will have to look more into this to work it out without creating a new useEffect for each div. I then passed down this boolean to my styled component to trigger the animation. As well as getting this to work, I also learned that to reference keyframes within the conditional styling of the components I needed to use 'css', imported from styled-components, before the backticks.
