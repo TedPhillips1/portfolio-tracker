@@ -67,3 +67,11 @@ Notes: Got stuck on configuration problems for a while, make sure everything is 
 - Learned about styled-component keyframes
 
 A big aim today was to find how to give my design a professional feel. I felt that my landing page from yesterday had a beginner/basic look but by adding some simple things like a fade in and design element it took the design up a notch. I will continue to find little tricks like this to give my design an edge.
+I've also decided that I am going to scrap the about page and fill out the landing page some more.
+
+### 16/2/2022
+
+- Played around with more animations
+- Tried to use Intersection Observer to trigger anuimation on scroll but couldn't get it working
+
+Probably going to try again tomorrow with intersection observer however I may move on if I can't do it tomorrow.
