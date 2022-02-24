@@ -4,44 +4,54 @@ import PageHeaderComponent from "../page-header/page-header-component";
 import TextComponent from "../text/text-component";
 import { useEffect, useState } from "react";
 
-
-
-function observerCallback(entries: any, observer:any) {
+function observerCallback(entries: any, observer: any) {
   entries.forEach((entry: any) => {
     if (entry.isIntersecting) {
+      console.log("called");
       alert("found!");
     }
   });
 }
 
 function LandingPageComponent() {
-  if(document instanceof Document){
+  useEffect(() => {
     const observerOptions = {
-      root: document.querySelector("#findMe"),
+      root: null,
       rootMargin: "0px",
-      threshold: 1.0
+      threshold: 1.0,
     };
-  
-    useEffect(() => {
-  
-      const observer = new IntersectionObserver(
-        observerCallback,
-        observerOptions
-      );
-      
-      const target = document.querySelector("#findMe");
-  
-      if (target !== null){
-        observer.observe(target);
-      }
-  
-  
-      return () => {
-        observer.disconnect();
-      };
-    }, []);
 
-  }
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    const target = document.querySelector("#findMe");
+
+    if (target !== null) {
+      observer.observe(target);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  // if (typeof window !== "undefined") {
+  //   const observerOptions = {
+  //     root: null,
+  //     rootMargin: "0px",
+  //     threshold: 1.0,
+  //   };
+
+  //   const observer = new IntersectionObserver(
+  //     observerCallback,
+  //     observerOptions
+  //   );
+
+  //   const target = document.querySelector("#findMe");
+
+  //   observer.observe(target);
+  // }
 
   return (
     <LandingPage>
