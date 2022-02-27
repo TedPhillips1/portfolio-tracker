@@ -17,10 +17,13 @@ const fadeAcross = keyframes`
 
 export const LandingText = styled.p`
   font-size: 20px;
+  margin-top: -20px;
+  padding: 10px;
+  color: white;
   ${(props: Props) =>
     props.toggle
       ? css`
-          color: white;
+
           animation: ${fadeAcross} 1.5s 1;
         `
       : css`

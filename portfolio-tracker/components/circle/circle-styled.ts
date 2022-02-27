@@ -7,7 +7,7 @@ export const Circle = styled.div`
   background: linear-gradient(
     129deg,
     rgba(61, 61, 61, 1) 0%,
-    rgba(31, 31, 31, 1) 85%
+    rgba(31, 31, 31, 1) 65%
   );
   border-radius: 10vw;
   position: absolute;

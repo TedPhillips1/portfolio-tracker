@@ -17,12 +17,6 @@ export const LandingPage = styled.main`
   width: 70vw;
 
   div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     animation: ${fadeUp} 1.5s 1;
   }
 `;

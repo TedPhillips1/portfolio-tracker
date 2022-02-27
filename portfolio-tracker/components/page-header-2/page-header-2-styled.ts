@@ -16,10 +16,11 @@ const fadeAcross = keyframes`
 `;
 
 export const PageHeader2 = styled.h2`
-  font-size: 40px;
-  ${(props: Props) => (props.toggleAnimation ? "color: white;" : "opacity: 0;")}
+  font-size: 36px;
+  min-width: 250px;
+  ${(props: Props) => (props.toggle ? "color: white;" : "opacity: 0;")}
   animation: ${(props: Props) =>
-    props.toggleAnimation
+    props.toggle
       ? css`
           ${fadeAcross} 1.5s 1
         `

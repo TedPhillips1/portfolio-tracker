@@ -5,6 +5,7 @@ import TextComponent from "../text/text-component";
 import { useEffect, useReducer } from "react";
 import PageHeader2Component from "../page-header-2/page-header-2-component";
 import LandingTextComponent from "../landing-text/landing-text-component";
+import AboutContentComponent from "../about-content/about-content-component";
 
 type initialState = {
   div1: boolean;
@@ -38,14 +39,19 @@ function LandingPageComponent() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 1.0,
+      threshold: 0.8,
     };
 
     function observerCallback(entries: any, observer: any) {
       entries.forEach((entry: any) => {
         if (entry.isIntersecting) {
-          console.log("called");
-          dispatch("3");
+          if (entry.target.id === "div3") {
+            dispatch("3");
+          } else if (entry.target.id === "div2") {
+            dispatch("2");
+          } else if (entry.target.id === "div1") {
+            dispatch("1");
+          }
         }
       });
     }
@@ -55,10 +61,20 @@ function LandingPageComponent() {
       observerOptions
     );
 
-    const target = document.querySelector("#findMe");
+    const target1 = document.querySelector("#div1");
+    const target2 = document.querySelector("#div2");
+    const target3 = document.querySelector("#div3");
 
-    if (target !== null) {
-      observer.observe(target);
+    if (target1 !== null) {
+      observer.observe(target1);
+    }
+
+    if (target2 !== null) {
+      observer.observe(target2);
+    }
+
+    if (target3 !== null) {
+      observer.observe(target3);
     }
 
     return () => {
@@ -69,31 +85,25 @@ function LandingPageComponent() {
   return (
     <LandingPage>
       <TopContentComponent />
-
-      <div>
-        <PageHeader2Component
-          toggleAnimation={state.div1}
-          text="Lorem ipsum dolor sit"
+      <div id="div1">
+        <AboutContentComponent
+          toggle={state.div1}
+          header="Become a Better Investor"
+          text="Want to become a better investor? TGP portfolios makes it simple. Reduce your time spent tracking, leaving more for the important stuff."
         />
-        <LandingTextComponent text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
       </div>
-
-      <div>
-        <PageHeader2Component
-          toggleAnimation={state.div2}
-          text="Lorem ipsum dolor sit"
+      <div id="div2">
+        <AboutContentComponent
+        toggle={state.div2}
+        header="Real-time Portfolio Valuations"
+        text="Track symbols with real-time data on your holdings and market indicators."
         />
-        <LandingTextComponent text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
       </div>
-
-      <div id="findMe">
-        <PageHeader2Component
-          toggleAnimation={state.div3}
-          text="Lorem ipsum dolor sit"
-        />
-        <LandingTextComponent
+      <div id="div3">
+        <AboutContentComponent 
           toggle={state.div3}
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          header="Stock & Crypto Assets"
+          text="Find all of your stock and crypto holdings in one place."
         />
       </div>
     </LandingPage>
