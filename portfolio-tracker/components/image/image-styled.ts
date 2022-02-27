@@ -18,4 +18,5 @@ export const Image = styled.img`
   height: auto;
   border-radius: 1%;
   animation: ${fadeUp} 1.5s 1;
+  box-shadow: rgba(5, 5, 5, 0.15) 0px 48px 100px 0px;
 `;

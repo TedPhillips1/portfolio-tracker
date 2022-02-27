@@ -1,10 +1,6 @@
 import { LandingPage } from "./landing-page-styled";
 import TopContentComponent from "../top-content/top-content-component";
-import PageHeaderComponent from "../page-header/page-header-component";
-import TextComponent from "../text/text-component";
 import { useEffect, useReducer } from "react";
-import PageHeader2Component from "../page-header-2/page-header-2-component";
-import LandingTextComponent from "../landing-text/landing-text-component";
 import AboutContentComponent from "../about-content/about-content-component";
 
 type initialState = {
@@ -39,7 +35,7 @@ function LandingPageComponent() {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.8,
+      threshold: 0.7,
     };
 
     function observerCallback(entries: any, observer: any) {
@@ -94,13 +90,13 @@ function LandingPageComponent() {
       </div>
       <div id="div2">
         <AboutContentComponent
-        toggle={state.div2}
-        header="Real-time Portfolio Valuations"
-        text="Track symbols with real-time data on your holdings and market indicators."
+          toggle={state.div2}
+          header="Real-time Portfolio Valuations"
+          text="Track symbols with real-time data on your holdings and market indicators."
         />
       </div>
       <div id="div3">
-        <AboutContentComponent 
+        <AboutContentComponent
           toggle={state.div3}
           header="Stock & Crypto Assets"
           text="Find all of your stock and crypto holdings in one place."

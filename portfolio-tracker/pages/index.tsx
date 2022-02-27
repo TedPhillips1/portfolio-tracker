@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavBarComponent from "../components/navbar/navbar-component";
 import { useUser } from "@auth0/nextjs-auth0";
 import LandingPageComponent from "../components/landing-page/landing-page-component";
+import FooterComponent from "../components/footer/footer-component";
 
 const Home: NextPage = () => {
   const { user } = useUser();
@@ -29,6 +30,7 @@ const Home: NextPage = () => {
       </Head>
       <NavBarComponent />
       {!user && <LandingPageComponent />}
+      <FooterComponent />
     </div>
   );
 };

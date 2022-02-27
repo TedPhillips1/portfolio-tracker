@@ -88,3 +88,11 @@ Probably going to try again tomorrow with intersection observer however I may mo
 - used this state to trigger an animation by passing the boolean value down to the styled component
 
 After getting the intersection observer to work (Finally!) I implemented it into my app by making it change the state of an object. I used useReducer for this as I plan to have mutiple different divs each requiring their state toggled at different times. I am unsure how I will do this yet and will have to look more into this to work it out without creating a new useEffect for each div. I then passed down this boolean to my styled component to trigger the animation. As well as getting this to work, I also learned that to reference keyframes within the conditional styling of the components I needed to use 'css', imported from styled-components, before the backticks.
+
+### 27/2/2022
+
+- Intersection observer working for all divs
+- Styled the divs more
+- Added a footer component
+
+I used multiple targets for the intersection observer and used an if statement within the observer function to check which target has been intersected. This then triggered a different dispatch function for each. I then styled these, starting with a gradient but opted for a more simple shaded background in the end. Would like to add a 2x2 grid under the top div that animates in 1 by 1.
