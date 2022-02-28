@@ -2,6 +2,8 @@ import { LandingPage } from "./landing-page-styled";
 import TopContentComponent from "../top-content/top-content-component";
 import { useEffect, useReducer } from "react";
 import AboutContentComponent from "../about-content/about-content-component";
+import SubHeaderComponent from "../sub-header/sub-header-component";
+import AuthButtonComponent from "../auth-button/auth-button-comp";
 
 type initialState = {
   div1: boolean;
@@ -102,6 +104,10 @@ function LandingPageComponent() {
           text="Find all of your stock and crypto holdings in one place."
         />
       </div>
+      <SubHeaderComponent text="Sign Up Today" />
+      <a href="/api/auth/login">
+        <AuthButtonComponent text="Sign Up" />
+      </a>
     </LandingPage>
   );
 }

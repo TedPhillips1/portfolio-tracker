@@ -20,11 +20,6 @@ function NavBarComponent() {
       <nav>
         {!user && (
           <>
-            <Link href="/about">
-              <a>
-                <ClearButtonComponent text="About" />
-              </a>
-            </Link>
             <a href="/api/auth/login">
               <AuthButtonComponent text="Log In" />
             </a>

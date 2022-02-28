@@ -8,6 +8,7 @@ export const AuthButton = styled.button`
   height: 40px;
   border-radius: 5px;
   font-size: 14px;
+  margin-left: 0;
 
   &:hover {
     background-color: #4a7d94;
