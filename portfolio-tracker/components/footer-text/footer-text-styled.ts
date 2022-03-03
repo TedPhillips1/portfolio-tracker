@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const FooterText = styled.p`
   margin: auto;
-  align-text: center;
-  padding: 30px;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
 `;
