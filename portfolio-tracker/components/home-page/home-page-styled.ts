@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const HomePage = styled.main`
   .top-content {
-    width: 80vw;
+    width: 75vw;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 11vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 `;
