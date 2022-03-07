@@ -1,5 +1,5 @@
 import MIHeaderComponent from "../../atoms/mi-header/mi-header-component";
-import MIFullComponent from "../../atoms/mi-price/mi-price-component";
+import MIFullComponent from "../mi-price/mi-price-component";
 import { MarketIndicator } from "./market-indicator-styled";
 
 function MarketIndicatorComponent() {

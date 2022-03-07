@@ -1,5 +1,5 @@
 import { MIFull, MIPrice } from "./mi-price-styled";
-import TextComponent from "../text/text-component";
+import TextComponent from "../../atoms/text/text-component";
 
 type Props = {
   symbol: string;
