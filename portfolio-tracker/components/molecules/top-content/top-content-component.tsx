@@ -1,10 +1,10 @@
 import { TopContent } from "./top-component-styled";
-import AuthButtonComponent from "../auth-button/auth-button-comp";
-import SubHeaderComponent from "../sub-header/sub-header-component";
-import CircleComponent from "../circle/circle-component";
-import PageHeaderComponent from "../page-header/page-header-component";
-import TextComponent from "../text/text-component";
-import ImageComponent from "../image/image-component";
+import AuthButtonComponent from "../../atoms/auth-button/auth-button-comp";
+import SubHeaderComponent from "../../atoms/sub-header/sub-header-component";
+import CircleComponent from "../../atoms/circle/circle-component";
+import PageHeaderComponent from "../../atoms/page-header/page-header-component";
+import TextComponent from "../../atoms/text/text-component";
+import ImageComponent from "../../atoms/image/image-component";
 
 function TopContentComponent() {
   return (

@@ -7,4 +7,7 @@ export const ValueChart = styled.section`
   margin: auto;
   margin-top: 11vh;
   margin-bottom: 11vh;
+  border-radius: 5px;
+  box-shadow: 0 10px 12px -10px rgba(0, 0, 0, 0.4),
+    10px 0 12px -10px rgba(0, 0, 0, 0.4);
 `;

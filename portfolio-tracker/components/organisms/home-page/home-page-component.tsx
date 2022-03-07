@@ -1,6 +1,6 @@
-import HomeTextContentComponent from "../home-text-content/home-text-content-component";
-import MarketIndicatorComponent from "../market-indicator/market-indicator-component";
-import ValueChartComponent from "../value-chart/value-chart-component";
+import HomeTextContentComponent from "../../molecules/home-text-content/home-text-content-component";
+import MarketIndicatorComponent from "../../molecules/market-indicator/market-indicator-component";
+import ValueChartComponent from "../../molecules/value-chart/value-chart-component";
 import { HomePage } from "./home-page-styled";
 
 function HomePageComponent() {

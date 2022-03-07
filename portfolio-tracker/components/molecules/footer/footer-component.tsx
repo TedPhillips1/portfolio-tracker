@@ -1,10 +1,10 @@
 import { Footer } from "./footer-styled";
-import TextComponent from "../text/text-component";
-import FooterTextComponent from "../footer-text/footer-text-component";
-import AuthButtonComponent from "../auth-button/auth-button-comp";
+import TextComponent from "../../atoms/text/text-component";
+import FooterTextComponent from "../../atoms/footer-text/footer-text-component";
+import AuthButtonComponent from "../../atoms/auth-button/auth-button-comp";
 import { useUser } from "@auth0/nextjs-auth0";
 import Link from "next/link";
-import ClearButtonComponent from "../clear-button/clear-button-component";
+import ClearButtonComponent from "../../atoms/clear-button/clear-button-component";
 
 function FooterComponent() {
   const { user } = useUser();

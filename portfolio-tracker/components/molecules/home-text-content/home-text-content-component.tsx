@@ -1,8 +1,8 @@
 import { userInfo } from "os";
-import PageHeaderComponent from "../page-header/page-header-component";
+import PageHeaderComponent from "../../atoms/page-header/page-header-component";
 import { HomeTextContent } from "./home-text-content-styled";
 import { useUser } from "@auth0/nextjs-auth0";
-import TextComponent from "../text/text-component";
+import TextComponent from "../../atoms/text/text-component";
 
 function HomeTextContentComponent() {
   const { user } = useUser();

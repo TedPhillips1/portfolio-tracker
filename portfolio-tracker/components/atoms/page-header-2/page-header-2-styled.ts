@@ -1,7 +1,7 @@
 import styled, { css, keyframes } from "styled-components";
 
 type Props = {
-  toggleAnimation: boolean;
+  toggle: boolean;
 };
 
 const fadeAcross = keyframes`
@@ -15,7 +15,7 @@ const fadeAcross = keyframes`
 }
 `;
 
-export const PageHeader2 = styled.h2`
+export const PageHeader2 = styled.h2<Props>`
   font-size: 36px;
   min-width: 250px;
   ${(props: Props) => (props.toggle ? "color: white;" : "opacity: 0;")}

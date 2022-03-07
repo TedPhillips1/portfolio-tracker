@@ -21,7 +21,7 @@
     "**/*.tsx",
     "pages/_document.js",
     "pages/api/auth/[...auth0].js",
-    "components/landing-page/landing-page-component.tsx"
+    "components/organisms/landing-page/landing-page-component.tsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import NavBarComponent from "../components/navbar/navbar-component";
+import NavBarComponent from "../components/molecules/navbar/navbar-component";
 
 const About: NextPage = () => {
   return (

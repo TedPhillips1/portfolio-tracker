@@ -1,9 +1,9 @@
 import { LandingPage } from "./landing-page-styled";
-import TopContentComponent from "../top-content/top-content-component";
+import TopContentComponent from "../../molecules/top-content/top-content-component";
 import { useEffect, useReducer } from "react";
-import AboutContentComponent from "../about-content/about-content-component";
-import SubHeaderComponent from "../sub-header/sub-header-component";
-import AuthButtonComponent from "../auth-button/auth-button-comp";
+import AboutContentComponent from "../../molecules/about-content/about-content-component";
+import SubHeaderComponent from "../../atoms/sub-header/sub-header-component";
+import AuthButtonComponent from "../../atoms/auth-button/auth-button-comp";
 
 type initialState = {
   div1: boolean;

@@ -1,5 +1,5 @@
-import ChartComponent from "../chart/chart-component";
-import MIHeaderComponent from "../mi-header/mi-header-component";
+import ChartComponent from "../../atoms/chart/chart-component";
+import MIHeaderComponent from "../../atoms/mi-header/mi-header-component";
 import { ValueChart } from "./value-chart-styled";
 
 function ValueChartComponent() {

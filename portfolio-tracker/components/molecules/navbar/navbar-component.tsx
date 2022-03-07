@@ -1,8 +1,8 @@
 import { NavBar } from "./navbar-styled";
-import LogoComponent from "../logo/logo-component";
-import ClearButtonComponent from "../clear-button/clear-button-component";
-import AuthButtonComponent from "../auth-button/auth-button-comp";
-import UserImgComponent from "../user-img/user-img-component";
+import LogoComponent from "../../atoms/logo/logo-component";
+import ClearButtonComponent from "../../atoms/clear-button/clear-button-component";
+import AuthButtonComponent from "../../atoms/auth-button/auth-button-comp";
+import UserImgComponent from "../../atoms/user-img/user-img-component";
 import { useUser } from "@auth0/nextjs-auth0";
 import Link from "next/link";
 
