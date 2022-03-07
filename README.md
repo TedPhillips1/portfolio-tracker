@@ -96,3 +96,18 @@ After getting the intersection observer to work (Finally!) I implemented it into
 - Added a footer component
 
 I used multiple targets for the intersection observer and used an if statement within the observer function to check which target has been intersected. This then triggered a different dispatch function for each. I then styled these, starting with a gradient but opted for a more simple shaded background in the end. Would like to add a 2x2 grid under the top div that animates in 1 by 1.
+
+### 5/3/2022
+
+- Added the chart.js react package
+- Built a line chart
+- styled it and fed it dummy data
+
+Unfortunately I couldn't style the chart.js line graph how i wanted to in the plan. I hoped to make the line color dynamic and change based on P&L. It is ok for now however, I may find a different package that can do that in the future.
+
+### 7/3/2022
+
+- Used the [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) filing system
+- Started on the crypto page
+
+I decided to go for the [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) filing system as it makes the most sense to me coming from a science background. I didnt't use the template folder as I didn't think I needed it however after doing a bit of coding using that method I now feel I need it so I will implement it next.
