@@ -8,4 +8,5 @@ export const CSTextContent = styled.section`
     10px 0 12px -10px rgba(0, 0, 0, 0.4);
   height: fit-content;
   padding-bottom: 10px;
+  top: 0;
 `;
