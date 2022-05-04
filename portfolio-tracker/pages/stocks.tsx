@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import FooterComponent from "../components/molecules/footer/footer-component";
 import NavBarComponent from "../components/molecules/navbar/navbar-component";
+import StockPageComponent from "../components/organisms/stock-page/stock-page-component";
 
 const Stocks: NextPage = () => {
   return (
@@ -14,7 +16,8 @@ const Stocks: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBarComponent />
-      <h1>Stocks</h1>
+      <StockPageComponent />
+      <FooterComponent />
     </div>
   );
 };

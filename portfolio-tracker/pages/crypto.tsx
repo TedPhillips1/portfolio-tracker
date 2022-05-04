@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NavBarComponent from "../components/molecules/navbar/navbar-component";
 import CryptoPageComponent from "../components/organisms/crypto-page/crypto-page-component";
+import FooterComponent from "../components/molecules/footer/footer-component";
 
 const Crypto: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Crypto: NextPage = () => {
       </Head>
       <NavBarComponent />
       <CryptoPageComponent />
+      <FooterComponent />
     </div>
   );
 };

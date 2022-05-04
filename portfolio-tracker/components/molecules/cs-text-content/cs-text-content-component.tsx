@@ -4,12 +4,17 @@ import TextComponent from "../../atoms/text/text-component";
 import { CSTextContent } from "./cs-text-content-styled";
 import MIFullComponent from "../mi-price/mi-price-component";
 
-function CSTextContentComponent() {
+type Props = {
+  header: string;
+  value: string;
+};
+
+function CSTextContentComponent({ header, value }: Props) {
   return (
     <CSTextContent>
-      <PageHeaderComponent text="Cryptoasset Portfolio" />
+      <PageHeaderComponent text={header} />
       <TextComponent text="Your Portfolio Value:" />
-      <TextComponent text="£5,432.10" />
+      <TextComponent text={value} />
     </CSTextContent>
   );
 }
