@@ -14,7 +14,7 @@ const fadeIn = keyframes`
     transform: translateY(0px);
   }`;
 
-export const AboutContent = styled.div`
+export const AboutContent = styled.div<Props>`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,7 +23,7 @@ export const AboutContent = styled.div`
   margin-bottom: 10vh;
   background-color: rgba(45, 45, 45, 1);
   border-radius: 8px;
-  box-shadow: rgba(5, 5, 5, 0.15) 0px 48px 100px 0px;
+  /* box-shadow: rgba(5, 5, 5, 0.15) 0px 48px 100px 0px; */
   ${(props: Props) =>
     props.toggle
       ? css`

@@ -1,11 +1,27 @@
 import { BSButtonBar } from "./bs-button-bar-styled";
 import BSButtonComponent from "../../atoms/bs-button/bs-button-component";
 
-function BSButtonBarComponent() {
+type Props = {
+  toggleBuy: () => void;
+  toggleSell: () => void;
+  disable: number;
+};
+
+function BSButtonBarComponent({ toggleBuy, toggleSell, disable }: Props) {
   return (
     <BSButtonBar>
-      <BSButtonComponent toggle={true} text="Buy" onClick={() => {}} />
-      <BSButtonComponent toggle={false} text="Sell" onClick={() => {}} />
+      <BSButtonComponent
+        toggle={true}
+        text="Buy"
+        onClick={toggleBuy}
+        disable={disable}
+      />
+      <BSButtonComponent
+        toggle={false}
+        text="Sell"
+        onClick={toggleSell}
+        disable={disable}
+      />
     </BSButtonBar>
   );
 }
